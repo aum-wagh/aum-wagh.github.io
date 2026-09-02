@@ -8,6 +8,10 @@ enableRobotsTXT: true
 taxonomies:
   skill: skills
 
+services:
+  googleAnalytics:
+    id: G-VHQYMMEG06
+
 params:
   env: production
   author: "Aum Wagh"
