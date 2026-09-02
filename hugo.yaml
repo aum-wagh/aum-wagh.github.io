@@ -30,31 +30,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-#   # homeInfoParams:
-#   #   Title: "Materials & Composites Engineer"
-#   #   Content: >
-#   #     I design, model, manufacture, and test composite structures, with experience spanning finite element analysis, materials characterization, and composite manufacturing.
-
-# menu:
-#   main:
-#     - identifier: projects
-#       name: Projects
-#       url: /projects/
-#       weight: 10
-
-#     - identifier: experience
-#       name: Experience
-#       url: /experience/
-#       weight: 20
-
-#     - identifier: about
-#       name: About
-#       url: /about/
-#       weight: 30
-
-# ---
-# title: "Balls"
-# ---
-
-# Balls
