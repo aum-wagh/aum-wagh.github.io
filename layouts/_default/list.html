@@ -1,0 +1,90 @@
+{{- define "main" }}
+
+{{- if eq .RelPermalink "/skills/" }}
+
+<nav class="breadcrumbs">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <span> &gt; </span>
+  <span>Skills</span>
+</nav>
+
+{{- else if eq .Kind "term" }}
+
+<nav class="breadcrumbs">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <span> &gt; </span>
+  <a href="{{ "/skills/" | relURL }}">Skills</a>
+  <span> &gt; </span>
+  <span>{{ .Title }}</span>
+</nav>
+
+{{- else if not .IsHome }}
+
+<nav class="breadcrumbs">
+  <a href="{{ "/" | relURL }}">Home</a>
+  <span> &gt; </span>
+  <span>{{ .Title }}</span>
+</nav>
+
+{{- end }}
+
+
+<header class="page-header">
+  <h1>
+    <!-- {{ .Title }} -->
+  </h1>
+
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+
+
+{{- if .Content }}
+
+<div class="post-content md-content">
+  {{ .Content }}
+</div>
+
+{{- end }}
+
+
+{{- if eq .Kind "term" }}
+
+<div class="term-projects">
+
+  {{- range .Pages }}
+
+  <article class="post-entry">
+
+    <header class="entry-header">
+      <h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+    </header>
+
+    {{- if .Description }}
+
+    <div class="entry-content">
+      <p>{{ .Description }}</p>
+    </div>
+
+    {{- else if .Summary }}
+
+    <div class="entry-content">
+      <p>{{ .Summary | plainify }}</p>
+    </div>
+
+    {{- end }}
+
+  </article>
+
+  {{- end }}
+
+</div>
+
+{{- end }}
+
+{{- end }}

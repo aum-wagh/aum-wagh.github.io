@@ -1,0 +1,9 @@
+<section class="skills-section">
+    <div class="skills-container">
+        {{ range site.Taxonomies.skills }}
+            <a class="skill-tag" href="{{ .Page.RelPermalink }}">
+                {{ .Page.Title }}
+            </a>
+        {{ end }}
+    </div>
+</section>

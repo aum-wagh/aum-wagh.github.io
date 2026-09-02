@@ -1,0 +1,7 @@
+<div class="project-skills">
+    {{- range .Page.Params.skills }}
+        <a class="skill-tag" href="{{ "/skills/" | relURL }}{{ . | urlize }}/">
+            {{ . }}
+        </a>
+    {{- end }}
+</div>
