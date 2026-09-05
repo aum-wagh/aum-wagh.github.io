@@ -22,7 +22,7 @@ skills:
 
 ## Highlights:
 
-- Led the design of a carbon fibre composite monocoque using Ansys ACP, achieving a 40% weight reduction through layup optimization and material selection across multiple design iterations 
+- Led the design of a carbon fibre composite monocoque using Ansys ACP, achieving a 35% weight reduction through layup optimization and material selection across multiple design iterations 
 - Developed a design workflow involving CAD modelling on SolidWorks and FEA on Ansys ACP 
 - Optimized the monocoque to pass the 5G impact regulations for the American Solar Challenge, and designed around the reaction forces from the suspension and rollcage 
 - Simulated a torsional stiffness test on Ansys ACP to observe deformation under a torsional load
